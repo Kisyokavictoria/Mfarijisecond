@@ -1,0 +1,30 @@
+<!-- navbar.component.html -->
+<div class="container-xxl-fluid">
+    <nav class="navbar navbar-expand-md" style="font-family: inter;">
+      <a class="navbar-brand spaced-link " id="navbar"><img src="/assets/images/logo.png"></a>
+      <button class="navbar-toggler" type="button" (click)="toggleNavbar()">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+  
+      <div class="collapse navbar-collapse" [ngClass]="{'show': isResponsive}">
+        <ul class="navbar-nav ml-auto" style="align-items: center;">
+          <li class="nav-item">
+            <a class="nav-link spaced-link" routerLink="" id="homelink">HOME</a>
+          </li>
+  
+          <li class="nav-item">
+            <a class="nav-link spaced-link" routerLink="/donate">DONATE</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link spaced-link" routerLink=""><img src="/assets/images/icons/cart.png"></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link spaced-link" routerLink="/about">ABOUT US</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link spaced-link" routerLink="/login" id="login">LOGIN</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
